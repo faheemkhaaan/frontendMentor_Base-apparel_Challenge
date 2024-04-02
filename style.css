@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+body{
+    font-size: 16px;
+}
+
+.container{
+    width: 100vw;
+    height: 98vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.left{
+    flex-basis: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(images/bg-pattern-desktop.svg); */
+}
+.left-content{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#title{
+    font-size: 3.5em;
+    font-family: sans-serif;
+    letter-spacing: .2em;
+}
+.title-span{
+    color: hsl(0, 36%, 70%);
+    font-weight: 100;
+}
+.right{
+    /* flex-basis: 30%; */
+    width: 40%;
+}
+.right img{
+    width: 100%;
+}
+.para{
+    color:  hsl(0, 36%, 70%);
+}
+.inputs{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-arrow{
+    border: none;
+    background-color: hsl(0, 36%, 70%);
+    padding: 15px 35px;
+    border-radius: 30px;
+    position: relative;
+    left: -20px;
+    transition: 0.3s linear;
+}
+
+.icon-arrow:hover{
+ box-shadow: 0px 5px 5px 2px hsl(0, 93%, 68%)
+}
+#email{
+    width: 100%;
+    padding: 18px 10px;
+    border: 1px solid hsl(0, 93%, 68%);
+    border-radius: 25px;
+    border-end-end-radius: 0px;
+    border-start-end-radius: 0px;
+    border-right: none;
+    outline: none;
+}
+
+.wrongEmail{
+    height: max-content;
+    overflow: hidden;
+    border: 1px solid black;
+}
